@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Cafe Scientifique</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <style type="text/css">
+      .hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: url('./hero.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        color: #fff;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+      .hero > * {
+        z-index: 1;
+      }
+
+      .hero__title {
+        font-size: 6rem;
+      }
+
+      .event {
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*background-image: url('./hero.jpg');*/
+        background-color: #eaeaea;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .event__content {
+        color: #fff;
+      }
+
+      .event__content > * {
+        float: left;
+        clear: left;
+        padding: 5px 10px;
+        background-color: #000;
+      }
+
+      .event__content > * + * {
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1 class="hero__title" aria-label="Cafe Scientifique">
+        <img src="" alt="Cafe Scientifique" />
+      </h1>
+      <p>Norwich based science, Bitch!</p>
+    </div>
+    <section class="event">
+      <div class="event__content">
+        <h2>Up Coming Events</h2>
+        <h3>Title of Event</h3>
+        <div>
+          Date of event
+        </div>
+        <address>
+          Address 1,
+          Address 2,
+          Postcode
+        </address>
+      </div> 
+    </section>
+  </body>
+</html>
